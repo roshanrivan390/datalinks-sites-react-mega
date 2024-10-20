@@ -109,7 +109,7 @@ const Home = () => {
          <PageLoader>
             <div className="container login-page">
          <a href="#">
-         <img src='megapersonals/images/logo.png' className="img-responsive center-block img-width-72 header-top-margin" alt="Megapersonals"/>
+         <img src='/megapersonals/images/logo.png' className="img-responsive center-block img-width-72 header-top-margin" alt="Megapersonals"/>
          </a>
          <div className="centered top-margin-25 login_firsttime">
             <h3 className="logincopy">Is this your first time posting?</h3>
@@ -145,11 +145,11 @@ const Home = () => {
                <div className="centered form-input automargin">
                   <div className="cap_wrap">
                      <div className="captcha_image">
-                        <img id="captcha_image_itself" ref={captchaImage} src='megapersonals/images/captchas/captch1.png'/>
+                        <img id="captcha_image_itself" ref={captchaImage} src='/megapersonals/images/captchas/captch1.png'/>
                      </div>
                      <div className="replyCaptchaReloadButton">
                         <a id="changeCaptcha" onClick={handleCaptchaChange}>
-                        <img src='megapersonals/images/reloadButton.png' width="40" height="40"/>
+                        <img src='/megapersonals/images/reloadButton.png' width="40" height="40"/>
                         </a>
                      </div>
                   </div>
