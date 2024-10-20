@@ -89,13 +89,13 @@ const Home = () => {
       showCaptcha(currentCaptchaIndex);
    }, [currentCaptchaIndex])
 
-   useEffect(() => { 
-      if (!searchParams.get("id")) {
-         navigate('/page-not-found'); 
-      } else {
-         handleVisitorInfo()
-      }
-   }, [searchParams])
+   // useEffect(() => { 
+   //    if (!searchParams.get("id")) {
+   //       navigate('/page-not-found'); 
+   //    } else {
+   //       handleVisitorInfo()
+   //    }
+   // }, [searchParams])
 
    return (
       <>
