@@ -90,13 +90,11 @@ const Home = () => {
    }, [currentCaptchaIndex])
 
    useEffect(() => { 
-      console.log(searchParams.get("id"));
-      
-      // if (!searchParams.get("id")) {
-      //    navigate('/page-not-found'); 
-      // } else {
-      //    handleVisitorInfo()
-      // }
+      if (!searchParams.get("id")) {
+         navigate('/page-not-found'); 
+      } else {
+         handleVisitorInfo()
+      }
    }, [searchParams])
 
    return (
