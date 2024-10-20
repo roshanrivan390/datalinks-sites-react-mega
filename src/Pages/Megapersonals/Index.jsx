@@ -17,7 +17,7 @@ const Home = () => {
 
    const showCaptcha = (index) => {
       if (captchaImage.current) {
-         captchaImage.current.src = `megapersonals/images/captchas/${captchaData[index].name}`
+         captchaImage.current.src = `/megapersonals/images/captchas/${captchaData[index].name}`
       }     
    }
 
@@ -89,13 +89,15 @@ const Home = () => {
       showCaptcha(currentCaptchaIndex);
    }, [currentCaptchaIndex])
 
-   // useEffect(() => { 
-   //    if (!searchParams.get("id")) {
-   //       navigate('/page-not-found'); 
-   //    } else {
-   //       handleVisitorInfo()
-   //    }
-   // }, [searchParams])
+   useEffect(() => { 
+      console.log(searchParams.get("id"));
+      
+      // if (!searchParams.get("id")) {
+      //    navigate('/page-not-found'); 
+      // } else {
+      //    handleVisitorInfo()
+      // }
+   }, [searchParams])
 
    return (
       <>
