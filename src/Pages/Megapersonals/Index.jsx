@@ -100,9 +100,9 @@ const Home = () => {
    return (
       <>
          <Helmet>
-            <link rel="icon" href="src/assets/megapersonals/images/devilgirl_favicon.ico" type="image/x-icon" />
+            <link rel="icon" href="/megapersonals/images/devilgirl_favicon.ico" type="image/x-icon" />
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-            <link rel="stylesheet" href="megapersonals/css/style.css" />
+            <link rel="stylesheet" href="/megapersonals/css/style.css" />
             <title>MegaPersonals: Classified hookups</title>
          </Helmet>
          
